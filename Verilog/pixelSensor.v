@@ -99,5 +99,5 @@ module PIXEL_SENSOR
    // Readout
    //----------------------------------------------------------------
    // Assign data to bus when pixRead = 0
-   assign DATA = READ ? ~p_data : 8'bZ;
+   assign DATA = READ ? ~p_data : 8'bZ; //p_data is inverted to give the correct output
 endmodule // re_control
